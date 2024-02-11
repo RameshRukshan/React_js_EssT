@@ -1,7 +1,3 @@
-
-
-<!-- First React code -->
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,23 +15,23 @@
   </head>
   <body>
     <!--start react root-->
-    <div id="root">
-
-    </div>
+    <div id="root"></div>
 
     <h1>Getting Started with React</h1>
 
     <script type="text/javascript">
-        ReactDom.render(
+        // Render a React element into the DOM
+        ReactDOM.render(
+            // Create a new React element by calling React.createElement
             React.createElement(
-                "H1",
+                "h1",  // Use lowercase 'h1' here
                 null,
-                "Getting Start with React"
+                "Getting Started with React"
             ),
+            // Get a reference to the DOM element with the id 'root'
             document.getElementById("root")
-            
         );
-        console.log('lol');
+        console.log('lol'); //testing console log
     </script>
 
   </body>
